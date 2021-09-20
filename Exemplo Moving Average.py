@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
 def moving_average(d,extra_periods=1,n=3):
     d=np.array(d)
     cols=len(d)
@@ -23,15 +17,6 @@ df = moving_average(d)
 
 df[["Demand","Forecast"]].plot()
 
-
-# In[8]:
-
-
 df[["Demand","Forecast"]].plot(figsize=(8,3),title="Moving Average",ylim=(0,30),style=["-","--"])
-
-
-# In[ ]:
-
-
 
 
